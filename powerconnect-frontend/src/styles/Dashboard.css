@@ -1,0 +1,158 @@
+/* Hero Section */
+.hero {
+  background-image: url("../images/dashboard.png");
+  background-size: cover;
+  background-position: center 15%; /* move image down for visibility */
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding-top: 60px; /* move content down */
+  padding-left: 40px;
+  color: rgb(63, 63, 63);
+}
+
+.hero-content {
+  width: 50%; /* left half of the page */
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: 300; /* thin font */
+  line-height: 1.5;
+}
+
+/* About Section (image left, text right) */
+.about-section {
+  display: flex;
+  flex-wrap: wrap; /* stack on smaller screens */
+  max-width: 1200px;
+  margin: 50px auto;
+  align-items: center;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  height: 400px; /* fixed height to align with text */
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px 40px;
+}
+
+.about-text h2 {
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  font-weight: 300; /* thin font */
+  color: rgb(63, 63, 63);
+  line-height: 1.6;
+}
+
+/* City Facts & Stats Section */
+.city-stats-section {
+  background-color: #f2f2f2; /* light grey */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.city-stats-section h2 {
+  color: black;
+  font-weight: 400; /* not bold */
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.stats-description {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 300; /* thin */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.stats-cards {
+  display: flex;
+  justify-content: space-between; /* equal spacing */
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: nowrap; /* prevent wrapping on large screens */
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px 20px;
+  flex: 1; /* equal width */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  color: #c01b18;
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 2.5rem; /* bigger numbers */
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.stat-desc {
+  font-size: 1rem;
+  font-weight: 300; /* thin font */
+  color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .hero-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-image, .about-text {
+    flex: 1 1 100%;
+  }
+
+  .about-text {
+    padding: 20px 0;
+  }
+
+  .stats-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

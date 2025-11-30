@@ -1,0 +1,108 @@
+/* Top Contact Bar */
+.top-bar {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-bar .logo {
+  height: 50px;
+}
+
+/* Navbar with transparent background */
+.navbar {
+  background-color: rgba(230, 233, 236, 0.7); /* semi-transparent */
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; /* center container */
+  position: fixed;
+  top: 70px; /* height of top-bar */
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav a {
+  color: black;
+  margin: 0 15px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #f91313;
+  text-decoration: underline;
+}
+
+.navbar nav a.active {
+  border-bottom: 2px solid #f91313;
+}
+
+/* Footer */
+.footer {
+  background-color: #272728;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px; /* spacing between icons */
+  margin-bottom: 10px;
+  padding-right: 80px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f91313;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+  }
+
+  .navbar .navbar-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}

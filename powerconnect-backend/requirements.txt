@@ -3,3 +3,8 @@ Flask-RESTful==0.3.10
 Flask-Cors==3.0.10
 SQLAlchemy==2.0.23
 psycopg2-binary==2.9.7
+Flask-Migrate==4.0.4
+python-dotenv==1.0.0
+flask-marshmallow==0.15.0
+marshmallow-sqlalchemy==0.28.1
+marshmallow==3.19.0
